@@ -1,6 +1,9 @@
 {
   "name": "jardin_botanico",
   "version": "0.1.0",
+  "description": "Sistema de administracion web y visualizacion de plantas he informacion remitida atraves de un qr.",
+  "author": "",
+  "license": "ISC",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -8,7 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +37,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
+    "@firebase/testing": "^0.20.11",
+    "babel-jest": "^29.7.0",
+    "firebase": "^10.7.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.5.0",
+    "firebase-mock": "^2.3.2",
+    "firestore-jest-mock": "^0.21.0",
+    "jest": "^27.5.1",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }
