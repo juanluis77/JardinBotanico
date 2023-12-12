@@ -11,7 +11,7 @@ const authInstance = auth(app);
 jest.mock('firebase-admin', () => {
   return {
     initializeApp: jest.fn(),
-    mockAuth: jest.fn(() => auth(app)),
+    mockAuth: jest.fn(() => authInstance),
     mockDatabase: jest.fn(() => database(app)),
     mockFirestore: jest.fn(() => firestoreEmulator),
   };
