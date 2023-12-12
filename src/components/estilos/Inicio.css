@@ -1,0 +1,104 @@
+/* Inicio.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+.Inicio {
+  font-family: 'Arial', sans-serif;
+}
+
+.miga-de-pan {
+  background-color: #811212;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.seccion-inicio {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.columnas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columna-izquierda {
+  width: 5cm;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+.columna-central {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.columna-derecha {
+  width: 5cm;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+/* Estilos para los enlaces */
+.columna-izquierda a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.columna-izquierda a:hover {
+  background-color: #ccc;
+}
+
+.custom-brand-text {
+  font-family: 'Inter', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ajusta los valores según tus preferencias */
+  font-size: 25px; /* O el tamaño que desees */
+  margin-left: 15px; /* O el margen que desees */
+  margin-right: 40px;
+}
+
+
+.navbar {
+  background-color: #b0e35ec9;
+  border-bottom: 2px solid #292929;
+  border-radius: 5px;
+}
+
+.navbar-brand {
+  background-color: #9FD744; /* Puedes cambiar el color a tu preferencia */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-left: 15px;
+  
+  margin-right: 20px; /* Ajusta el espacio entre el logotipo y el texto */
+}
+
+
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-right: 40px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave */
+}
+
+.nav-link:hover {
+  background-color: #9FD744; /* Cambia el color al pasar el cursor */
+  color: #131313; /* Cambia el color del texto al pasar el cursor */
+}
+
+.nav-link.active {
+  background-color: #ffffff;
+  /* Puedes ajustar el color de la letra en el estado activo si es necesario */
+}
