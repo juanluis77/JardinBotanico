@@ -4,8 +4,9 @@ import React from 'react';
 const GuiaDeBienvenida = () => {
   return (
     <div>
-      <h2>Guía de Bienvenida</h2>
-      {/* Contenido específico de Guía de Bienvenida */}
+      {/* Asegúrate de que haya contenido aquí */}
+      <h1>Guía de bienvenida</h1>
+      <p>Contenido de la guía de bienvenida...</p>
     </div>
   );
 };

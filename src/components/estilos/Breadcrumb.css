@@ -1,0 +1,20 @@
+.breadcrumb {
+    background-color: #f0f0f0; /* Color de fondo para las migas de pan */
+    padding: 0.5rem;
+    margin-top: 1rem; /* Espacio sobre las migas de pan */
+  }
+  
+  .breadcrumb a {
+    color: #4CAF50;
+    margin-right: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .breadcrumb span {
+    margin-right: 0.5rem;
+  }
+  
+  /* Puedes agregar media queries para responsividad */
+  @media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+  }

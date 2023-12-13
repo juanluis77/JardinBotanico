@@ -1,0 +1,19 @@
+/* Estilos para pantallas grandes */
+.acerca-del-jardin {
+    /* Estilos básicos */
+  }
+  
+  /* Estilos para tabletas */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .acerca-del-jardin {
+      /* Ajustes para tabletas */
+    }
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 767px) {
+    .acerca-del-jardin {
+      /* Ajustes para móviles */
+    }
+  }
+  
