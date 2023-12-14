@@ -1,13 +1,14 @@
-
+//MainContent.jsx
 import React, { useState } from 'react';
 import AcercaDelJardin from '../inicio/AcercaDelJardin';
 import GuiaDeBienvenida from '../inicio/GuiaDeBienvenida';
 import Historia from '../inicio/Historia';
 import styled from 'styled-components';
+import Breadcrumb from '../shared/Breadcrumb';
 
 function MainContent() {
     // Estado para controlar qué contenido mostrar
-    const [content, setContent] = useState('inicio');
+    const [content, setContent] = useState('Inicio');
   
     let ContentComponent;
     switch (content) {
@@ -25,6 +26,9 @@ function MainContent() {
     }
   
     return (
+      <>
+      <Breadcrumb currentSubsection={content !== 'Inicio' ? content : ''} />
+
       <ContentLayout>
             <SideColumn>
                  <StyledButton onClick={() => setContent('guia-de-bienvenida')}>Guía de bienvenida</StyledButton>
@@ -36,6 +40,7 @@ function MainContent() {
                 {ContentComponent}
             </MainColumn>
       </ContentLayout>
+      </>
     );
   }
 
@@ -58,7 +63,7 @@ width:20%;
 `;
 
 const MainColumn = styled.div`
-width: 79%; // Cambiado de 70% a 60% si cada SideColumn es 20%
+width: 79.5%; // Cambiado de 70% a 60% si cada SideColumn es 20%
   background-color: #5EABE3; // Un tono más oscuro para el contenido central
   color: #000; // Cambia el color del texto a oscuro para que sea legible
   // Añade aquí otros estilos para la columna principal
@@ -79,5 +84,3 @@ const StyledButton = styled.button`
     background-color: rgba(94, 171, 227, 0.12); // Cambia el fondo al pasar el mouse
   }
 `;
-
-
