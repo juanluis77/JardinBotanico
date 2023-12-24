@@ -1,0 +1,32 @@
+.container {
+   display: contents;
+   background-color:#d9f899;
+   width: 100%;      
+   padding: 1rem;
+}
+.containerCard{
+   width: 100%;      
+   padding: 1rem;
+   background-color:#d9f899;
+   display:flex;
+   justify-content:center;
+}
+.card{
+   width:fit-content; 
+   padding: 2rem;
+}
+.card-body{
+   justify-content: space-between;
+}
+#logoGoogle{
+   align-items: center;
+   width: 25px; 
+   height: 25px;
+   alt: "logo Correo Gmail"; 
+}
+#logoJardin{
+   align-items: center;
+   width: 210px; 
+   height: 250px;
+   alt: "Jardin Martin Cardenas"; 
+}

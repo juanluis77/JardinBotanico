@@ -1,9 +1,13 @@
 import React from 'react';
+
 import { useLocation, Link } from 'react-router-dom';
+import '../estilos/Breadcrumb.css'; // Ajusta la ruta según tu estructura de carpetas
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 
-import '../estilos/Breadcrumb.css'; // Ajusta la ruta según tu estructura de carpetas
+
+
 
 const Breadcrumb = ({ currentSubsection }) => {
   const location = useLocation();
@@ -13,7 +17,6 @@ const Breadcrumb = ({ currentSubsection }) => {
  
   if (currentSubsection) {
     pathnames.push(currentSubsection);
-    
   }
   
 

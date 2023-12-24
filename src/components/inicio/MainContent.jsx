@@ -1,10 +1,13 @@
 //MainContent.jsx
-import React, { useState } from 'react';
+import React, { useState, } from 'react';
+import styled from 'styled-components';
+import Breadcrumb from '../shared/Breadcrumb';
+
 import AcercaDelJardin from '../inicio/AcercaDelJardin';
 import GuiaDeBienvenida from '../inicio/GuiaDeBienvenida';
 import Historia from '../inicio/Historia';
-import styled from 'styled-components';
-import Breadcrumb from '../shared/Breadcrumb';
+
+
 
 function MainContent() {
     // Estado para controlar qué contenido mostrar

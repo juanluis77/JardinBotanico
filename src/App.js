@@ -1,20 +1,29 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/inicio/Navbar';
-import Inicio from './components/inicio/Inicio';
+import styled from 'styled-components';
+import Navbar from './components/shared/Navbar'
+import Rutas from './routes/Rutas';
+import { AuthContextProvider, } from './Context/AuthContext';
+
+
 function App() {
+
+  
+
   return ( 
- 
-    <Router>
-     
-      <Navbar />
-      <Routes>
-        <Route path="/inicio" element={<Inicio />} />
-      </Routes>
-    </Router>
- 
+    <AuthContextProvider>
+        <Contenedor>
+            <Navbar/>
+            <Rutas/>
+        </Contenedor>
+    </AuthContextProvider>
+  
   );
 }
 
 export default App;
+
+const Contenedor= styled.div`
+  max-width: 100vw;
+  min-height: 100vw;  
+`

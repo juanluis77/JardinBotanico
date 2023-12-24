@@ -1,28 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App'; // Este componente debería manejar tus rutas
-import './index.css'; // Importa tus estilos globales aquí
-import 'bootstrap/dist/css/bootstrap.min.css'; // Importa Bootstrap para estilos
+import ReactDOM from 'react-dom/client';
+import './index.css';                             // Importa tus estilos globales aquí
+import App from './App';                            // Este componente debería manejar tus rutas
+import 'bootstrap/dist/css/bootstrap.min.css';    // Importa Bootstrap para estilos
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from 'react-router-dom'
 
-ReactDOM.render(
-  <React.StrictMode>
-    
-      <App  /> {/* App es el componente que debería contener tu configuración de rutas */}
-    
-  </React.StrictMode>,
-  document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+      <React.StrictMode>
+  <BrowserRouter>
+          <App />             {/* App es el componente que debería contener tu configuración de rutas */}
+          </BrowserRouter>
+      </React.StrictMode>
 );
 
-/*import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom'; 
-import Inicio from './components/inicio/Inicio'; // Asegúrate de que el nombre del archivo sea correcto y la ruta sea precisa
-import './index.css'; // Si tienes un archivo de estilos global, puedes importarlo aquí
-import 'bootstrap/dist/css/bootstrap.min.css';
+reportWebVitals();
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Inicio />
-  </React.StrictMode>,
-  document.getElementById('root')
-);*/
+

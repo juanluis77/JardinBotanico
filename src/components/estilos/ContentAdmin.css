@@ -1,0 +1,21 @@
+#container{
+   display: flex;
+   flex-wrap:wrap;
+   width:100wh;
+   margin:0px auto;
+   text-align:justify;
+   background-color: white;
+}
+#btnCerrar{
+   margin-top: 1rem;
+}
+.laterales{
+   display: block;
+   align-items:start;
+   justify-content: center;
+   background-color: beige;
+   height:100vh;
+}
+.mainColumn{
+   background-color:#d9f899;
+}
