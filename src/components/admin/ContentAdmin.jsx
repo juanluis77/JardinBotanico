@@ -19,7 +19,8 @@ function ContentAdmin () {
       const cerrarSesion = async() =>{
         try {
           await logOut();
-          navigate("/Inicio")
+          navigate("/Inicio");
+          alert('Cierre de cuenta exitosa');
         }catch(error){
           console.log(error);  
         }
@@ -41,7 +42,8 @@ function ContentAdmin () {
           break;
         default:
           ContentComponent = <div>
-                      <h1>HOLA ADMINISTRADOR</h1>
+                      <h1>HOLA ADMINISTRADOR:</h1>
+                      <p>Administrador(a): {user.displayName}</p>
                       <p>Elige un tarea del menu de la izquierda</p>
                     </div>;
       };
