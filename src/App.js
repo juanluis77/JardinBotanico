@@ -12,10 +12,8 @@ function App() {
 
   return ( 
     <AuthContextProvider>
-        <Contenedor>
             <Navbar/>
             <Rutas/>
-        </Contenedor>
     </AuthContextProvider>
   
   );

@@ -42,8 +42,7 @@ function ContentAdmin () {
           break;
         default:
           ContentComponent = <div>
-                      <h1>HOLA ADMINISTRADOR:</h1>
-                      <p>Administrador(a): {user.displayName}</p>
+            <p>Administrador(a): {user.displayName}</p>
                       <p>Elige un tarea del menu de la izquierda</p>
                     </div>;
       };
